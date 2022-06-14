@@ -1,5 +1,5 @@
 mediafiles/
-
+.idea/
 
 # Django #
 *.log
