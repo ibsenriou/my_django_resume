@@ -38,7 +38,7 @@ class ContactView(generic.FormView):
 
     def form_valid(self, form):
         form.save()
-        messages.success(self.request, 'Obrigado! Entraremos em contato em breve.')
+        messages.success(self.request, 'Thank you. We will be in touch soon.')
         return super().form_valid(form)
 
 
