@@ -19,7 +19,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     get_dynamic_ec2_private_ip(),
     'my-django-resume-dev.sa-east-1.elasticbeanstalk.com',
-    '127.0.0.1'
+    'www.devgabriel.com.br',
+    'devgabriel.com.br',
+    '127.0.0.1',
 ]
 
 
