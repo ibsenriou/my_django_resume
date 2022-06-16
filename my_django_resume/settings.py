@@ -2,6 +2,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from my_django_resume.main.management.aws.aws_config import get_dynamic_ec2_private_ip
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -15,6 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    get_dynamic_ec2_private_ip(),
     'my-django-resume-dev.sa-east-1.elasticbeanstalk.com',
     '127.0.0.1'
 ]
