@@ -14,6 +14,7 @@ from . models import (
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('id', 'user')
+    filter_horizontal = ('skills',)
 
 
 @admin.register(ContactProfile)
