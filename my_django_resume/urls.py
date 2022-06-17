@@ -11,6 +11,7 @@ urlpatterns = [
          {'document_root': settings.MEDIA_ROOT}),
     path(r'^static/(?P<path>.*)$', serve,
          {'document_root': settings.STATIC_ROOT}),
+    path('health/', include('health_check.urls')),
 ]
 
 if settings.DEBUG:

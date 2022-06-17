@@ -37,6 +37,11 @@ INSTALLED_APPS = [
 
     'storages',
 
+    'health_check',
+    'health_check.db',
+    'health_check.cache',
+    'health_check.storage',
+
     'my_django_resume.main',
     'ckeditor',
 ]
