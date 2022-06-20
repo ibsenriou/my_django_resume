@@ -1,5 +1,8 @@
 mediafiles/
 .idea/
+/staticfiles/*
+.staticfiles
+/staticfiles
 
 # Django #
 *.log
