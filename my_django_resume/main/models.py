@@ -142,6 +142,7 @@ class Certificate(models.Model):
     class Meta:
         verbose_name_plural = 'Certificates'
         verbose_name = 'Certificate'
+        ordering = ('id',)
 
     date = models.DateTimeField(blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
@@ -153,3 +154,4 @@ class Certificate(models.Model):
 
     def __str__(self):
         return self.name
+
